@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Point AI
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                include components/intro 
+                +intro 
+                include components/trust 
+                +trust 
+                include components/form 
+                +form 
+                include components/bye 
+                +bye 
+                include components/smi 
+                +smi 
+                include components/info  
+                +info  
+                include components/support   
+                +support   
+                include components/corp   
+                +corp    
+                include components/review   
+                +review   
+                include components/days 
+                +days 
+                include components/blog 
+                +blog 
+                include components/faq 
+                +faq 
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

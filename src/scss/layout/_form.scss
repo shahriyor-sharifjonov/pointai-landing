@@ -1,0 +1,79 @@
+.form{
+    padding-top: 60px;
+    padding-bottom: 150px;
+    &__content{
+        background: #D298FF;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 100px 80px;
+        color: #fff;
+    }
+    &__bg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__content{
+        display: flex;
+        gap: 90px;
+    }
+    &__title{
+        font-size: 48px;
+        line-height: 115%;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+    &__tag{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 11px;
+        font-size: 16px;
+        color: rgba(#fff, 0.7);
+        margin-bottom: 15px;
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 166%;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__input{
+        margin-bottom: 2px;
+        background: none;
+        width: 470px;
+        height: 70px;
+        border-radius: 8px;
+        padding: 20px;
+        border: 1px solid rgba(#fff, 0.4);
+        color: #fff;
+        font-weight: 500;
+        &::placeholder{
+            color: rgba(#fff, 0.6);
+        }
+    }
+    &__btn{
+        height: 70px;
+        background: #fff;
+        border-radius: 8px;
+        color: #2F3245;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 17px;
+    }
+    &__link{
+        text-align: center;
+        opacity: 0.7;
+        font-size: 13px;
+        line-height: 166%;
+    }
+}

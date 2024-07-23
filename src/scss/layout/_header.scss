@@ -1,0 +1,64 @@
+.header{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 32px;
+    }
+    &__li{
+        line-height: 0;
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 120%;
+        font-family: "Manrope", sans-serif;
+    }
+    &__logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 86px;
+        img{
+            width: 100%;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 32px;
+    }
+    &__lang{
+        background: none;
+        border: none;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    &__btn{
+        background: #FF5C29;
+        height: 42px;
+        border-radius: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 24px;
+        border: none;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

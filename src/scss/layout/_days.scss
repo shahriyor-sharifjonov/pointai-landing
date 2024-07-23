@@ -1,0 +1,31 @@
+.days{
+    padding-bottom: 150px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-size: 48px;
+        line-height: 115%;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 400;
+        span{
+            color: #FF5C29;
+        }
+    }
+    &__img{
+        margin-bottom: 30px;
+    }
+    &__btn{
+        border-radius: 34px;
+        background: #FF5C29;
+        color: #fff;
+        padding: 14px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        border: none;
+    }
+}

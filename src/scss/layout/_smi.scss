@@ -1,0 +1,36 @@
+.smi{
+    padding-bottom: 150px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 86px;
+    }
+    &__item{
+        width: 33.3333%;
+        &-img{
+            margin-bottom: 24px;
+        }
+        &-p{
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        &-link{
+            color: #FF5C29;
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 600;
+            font-family: "Manrope", sans-serif;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            width: max-content;
+            svg{
+                margin-bottom: -2px;
+            }
+        }
+    }
+}

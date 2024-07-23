@@ -1,0 +1,60 @@
+.review{
+    padding-bottom: 200px;
+    &__title{
+        margin-bottom: 100px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            display: flex;
+            flex-direction: column;
+        }
+        &-right{ 
+            max-width: 731px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 40px;
+            &>svg{
+                width: 57px;    
+                min-width: 57px;    
+            }
+        }
+        &-img{
+            width: 100px;
+            height: 100px;
+            line-height: 0;
+            margin-bottom: 42px;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-name{
+            font-size: 32px;
+            font-weight: 400;
+            color: #2A2924;
+            margin-bottom: 10px;
+        }
+        &-job{
+            font-size: 16px;
+            color: #AEAEAE;
+            font-family: "Manrope", sans-serif;
+        }
+        &-text{
+            color: #2A2924;
+            font-size: 30px;
+            line-height: 115%;
+            margin-bottom: 17px;
+        }
+        &-p{
+            color: #AEAEAE;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}

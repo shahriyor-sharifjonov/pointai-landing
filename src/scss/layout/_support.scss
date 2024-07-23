@@ -1,0 +1,43 @@
+.support{
+    padding-bottom: 190px;
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 166%;
+        margin-bottom: 60px;
+        color: #2F3245;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    &__item{
+        max-width: 395px;
+        width: 100%;
+        background: #F4F4F4;
+        border-radius: 12px;
+        padding: 33px 25px 35px 25px;
+        display: flex;
+        flex-direction: column;
+        &-svg{
+            flex: 1 1 auto;
+            margin-bottom: 73px;
+        }
+        &-title{
+            font-size: 20px;
+            margin-bottom: 13px;
+            line-height: 166%;
+        }
+        &-p{
+            color: #2F3245;
+            font-size: 16px;
+            line-height: 166%;
+        }
+    }
+}
