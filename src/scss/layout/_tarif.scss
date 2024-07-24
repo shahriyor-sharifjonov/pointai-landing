@@ -1,6 +1,11 @@
 .tarif{
     padding-top: 100px;
     padding-bottom: 120px;
+    &__container{
+        @media (min-width: 1400px){
+            max-width: 1200px;
+        }
+    }
     &__wrap{
         padding-bottom: 70px;
         border-bottom: 1px solid rgba(#000, 0.2);

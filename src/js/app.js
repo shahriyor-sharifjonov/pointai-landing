@@ -7,6 +7,7 @@ functions.isWebp();
 // const swiper = new Swiper();
 
 import $ from 'jquery'
+import gsap from 'gsap'
 
 $(document).ready(function() {
     $(".accordion > .accordion__button").on("click", function() {
@@ -25,3 +26,25 @@ $(document).ready(function() {
         }
     });
 });
+
+// document.addEventListener('scroll', function () {
+//     const sticky = document.querySelector('.choose__header');
+//     const container = document.querySelector('.choose__container');
+//     const containerRect = container.getBoundingClientRect();
+//     const stopPosition = containerRect.bottom - 200;
+
+//     console.log("window.scrollY", window.scrollY);
+//     console.log(containerRect.bottom);
+//     if (stopPosition <= window.innerHeight) {
+//         sticky.style.position = 'absolute';
+//         sticky.style.top = 'auto';
+//         sticky.style.bottom = containerRect.bottom - 200;
+//         sticky.style.width = '100%';
+//     } else {
+//         sticky.style.position = '-webkit-sticky';
+//         sticky.style.position = 'sticky';
+//         sticky.style.top = '0px';
+//         sticky.style.width = '100%';
+//         sticky.style.bottom = 'auto';
+//     }
+// });
