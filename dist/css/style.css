@@ -1502,7 +1502,7 @@
 }
 
 .func__btn {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 14px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -1587,6 +1587,102 @@
     -webkit-transform: translateX(-60%);
             transform: translateX(-60%);
   }
+}
+
+.platform__title {
+  font-size: 48px;
+  line-height: 115%;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  max-width: 753px;
+  width: 100%;
+  text-align: center;
+}
+
+.platform__p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 302px;
+  width: 100%;
+  color: #3B3B3B;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+
+.platform__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+}
+
+.platform__item {
+  background: #F4F4F4;
+  width: calc(25% - 18px);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  -webkit-transition: background 300ms ease-out;
+  -o-transition: background 300ms ease-out;
+  transition: background 300ms ease-out;
+  padding: 24px;
+}
+
+.platform__item:hover {
+  background: #FFE7E0;
+}
+
+.platform__item.two {
+  width: calc(50% - 12px);
+}
+
+.platform__item.active {
+  border-color: #FF5C29;
+}
+
+.platform__item.active .platform__item-num {
+  background: #FF5C29;
+  color: #fff;
+}
+
+.platform__item-num {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  border: 1px solid #FF5C29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.platform__item-title {
+  margin-bottom: 13px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.platform__item-p {
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+  font-family: "Manrope", sans-serif;
 }
 
 * {
