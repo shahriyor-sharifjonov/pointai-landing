@@ -11,8 +11,14 @@ html(lang="en")
             include components/header 
             +header 
             main.main 
-                .intro__container.container 
-                    h1.intro__title Functional
+                include components/form 
+                +form 
+                include components/days 
+                +days 
+                include components/blog 
+                +blog 
+                include components/faq 
+                +faq 
             include components/footer 
             +footer
         script(src="js/app.min.js") 

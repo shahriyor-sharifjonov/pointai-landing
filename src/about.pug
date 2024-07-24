@@ -11,8 +11,10 @@ html(lang="en")
             include components/header 
             +header 
             main.main 
-                .intro__container.container 
-                    h1.intro__title About
+                include components/about  
+                +about  
+                include components/team  
+                +team  
             include components/footer 
             +footer
         script(src="js/app.min.js") 
