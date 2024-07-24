@@ -1,0 +1,114 @@
+.func{
+    padding-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 110px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__tag{
+        background: #F4F4F4;
+        border-radius: 34px;
+        padding: 8px 12px;
+        color: #686E7E;
+        font-size: 12px;
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    &__title{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 753px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 140%;
+        margin-bottom: 24px;
+        span{
+            position: relative;
+            padding: 0 0px 8px 12px;
+            color: #FF5C29;
+            background: #FFFFFF;
+            border: 1px dashed #BEBEBE;
+            border-radius: 8px;
+            margin-right: 4px;
+            box-shadow: 0 4px 14px 0 rgba(#909090, 25%);
+            svg{
+                position: absolute;
+                right: 24px;
+                bottom: -8px;
+            }
+        }
+    }
+    &__p{
+        color: #3B3B3B;
+        opacity: 0.7;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Manrope", sans-serif;
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 32px;
+        line-height: 27px;
+    }
+    &__btn{
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        padding: 14px 24px;
+        color: #fff;
+        background: #FF5C29;
+        border-radius: 34px;
+    }
+    &__marque {
+        width: 100%; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        box-sizing: border-box; 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        rotate: -2deg;
+        background: #F4F4F4;
+        padding: 15px 0;
+        border: 1px solid #FFE0D6;
+        border-right: none;
+        border-left: none;
+
+        &-content {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 55px;
+            animation: marquee 40s linear infinite;
+        }
+
+        &-p{
+            font-family: "Manrope", sans-serif;
+            font-size: 16px;
+            line-height: 27px;
+            span{
+                color: #FF5C29;
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(60%);
+    }
+    100% {
+      transform: translateX(-60%);
+    }
+}
