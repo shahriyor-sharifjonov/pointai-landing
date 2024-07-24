@@ -6,15 +6,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
         title Point AI
-    body 
-        .wrapper 
-            include components/header 
-            +header 
-            main.main 
-                include components/about  
-                +about  
-                include components/team  
-                +team  
+    body
+        .wrapper
+            include components/header
+            +header
+            main.main
+                include components/about
+                +about
+                include components/team
+                +team
+                include components/investors
+                +investors
             include components/footer 
             +footer
         script(src="js/app.min.js") 
