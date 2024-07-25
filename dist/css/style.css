@@ -666,10 +666,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  gap: 24px;
 }
 
 .accordion__button.active svg {
@@ -688,6 +690,7 @@
   -o-transition: transform 300ms ease-out;
   transition: transform 300ms ease-out;
   transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+  min-width: 24px;
 }
 
 .accordion__button svg path {
@@ -2482,5 +2485,115 @@ body {
 
   .tarif__container {
     max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .footer__col:first-of-type {
+    max-width: 225px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer__col {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq__title {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
+
+  .accordion__button {
+    font-size: 18px;
+  }
+
+  .accordion__p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer__top {
+    padding-bottom: 60px;
+  }
+
+  .footer__top-title {
+    font-size: 28px;
+  }
+
+  .footer__top-copy {
+    text-align: center;
+  }
+
+  .footer__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__info-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__col {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__col:first-of-type {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer__col-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__bot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer__bot-link {
+    text-align: center;
+  }
+
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

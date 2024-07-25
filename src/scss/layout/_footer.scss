@@ -3,6 +3,9 @@
     padding-top: 100px;
     padding-bottom: 50px;
     color: #fff;
+    @include media(576){
+        padding-top: 60px;
+    }
     &__top{
         display: flex;
         flex-direction: column;
@@ -11,6 +14,9 @@
         padding-bottom: 110px;
         margin-bottom: 60px;
         border-bottom: 1px solid rgba(#fff, 0.2);
+        @include media(576){
+            padding-bottom: 60px;
+        }
         &-logo{
             margin-bottom: 32px;
         }
@@ -21,6 +27,9 @@
             letter-spacing: 1%;
             text-align: center;
             margin-bottom: 40px;
+            @include media(576){
+                font-size: 28px;
+            }
         }
         &-btn{
             color: #fff;
@@ -36,6 +45,9 @@
             font-weight: 400;
             font-size: 14px;
             color: rgba(#fff, 0.6);
+            @include media(576){
+                text-align: center;
+            }
         }
     }
     &__info{
@@ -45,9 +57,15 @@
         gap: 44px;
         padding-bottom: 56px;
         border-bottom: 1px solid rgba(#fff, 0.2);
+        @include media(576){
+            justify-content: center;
+        }
         &-item{
             display: flex;
             flex-direction: column;
+            @include media(576){
+                align-items: center;
+            }
             &-title{
                 text-transform: uppercase;
                 color: rgba(#fff, 0.5);
@@ -60,6 +78,14 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+        @include media(1200){
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        @include media(992){
+            flex-wrap: wrap;
+            gap: 40px;
+        }
     }
     &__cp{
         font-size: 14px;
@@ -73,8 +99,25 @@
         gap: 35px;
         max-width: 225px;
         width: 100%;
+        @include media(992){
+            width: calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+        @include media(576){
+            width: 100%;
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
         &:first-of-type{
             max-width: 450px;
+            @include media(1200){
+                max-width: 225px;
+            }
+            @include media(576){
+                width: 100%;
+                max-width: 100%;
+            }
         }
         &-title{
             font-size: 20px;
@@ -83,6 +126,9 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @include media(576){
+                align-items: center;
+            }
         }
         &-link{
             color: #C6C6C6;
@@ -94,12 +140,19 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @include media(576){
+            flex-direction: column;
+            gap: 12px;
+        }
         &-link{
             width: 100%;
             max-width: 250px;
             text-decoration: none;
             font-size: 14px;
             color: rgba(#fff, 0.4);
+            @include media(576){
+                text-align: center;
+            }
             a{
                 text-decoration: none;
             }
