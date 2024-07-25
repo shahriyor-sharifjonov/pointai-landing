@@ -2535,6 +2535,10 @@ body {
             flex-direction: column;
     gap: 24px;
   }
+
+  .blog__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2603,9 +2607,5 @@ body {
   .faq {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .blog__item {
-    width: 100%;
   }
 }
