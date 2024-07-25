@@ -1,8 +1,93 @@
 .header{
     padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    &__menu{
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+        width: 100%;
+        height: max-content;
+        opacity: 0;
+        visibility: hidden;
+        transition: 100ms ease-out;
+        transition-delay: 80ms;  
+        @include media(576){
+            height: calc(100vh - 77px);
+        }
+        &.open{
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0ms;  
+            &~.header__overlay{
+                opacity: 1;
+                visibility: visible;
+                transition-delay: 80ms;
+            }
+        }
+        @include media(992){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            padding-top: 48px;
+            @include media(576){
+                flex-direction: column;
+                gap: 24px;
+                height: 100%;
+            }
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: flex-end;
+            width: 40%;
+            @include media(576){
+                width: 100%;
+            }
+        }
+        .header__lang{
+            font-size: 20px;
+        }
+    }
+    &__overlay{
+        position: absolute;
+        top: 78px;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 56px);
+        background: #00000070;
+        display: none;
+        @include media(992){
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transition: 100ms ease-out;
+            transition-delay: 0ms;  
+        }
+    }
     &__nav{
         display: flex;
         align-items: center;
@@ -14,6 +99,9 @@
         align-items: center;
         justify-content: flex-start;
         gap: 32px;
+        @include media(992){
+            display: none;
+        }
     }
     &__li{
         line-height: 0;
@@ -24,6 +112,9 @@
         font-weight: 500;
         line-height: 120%;
         font-family: "Manrope", sans-serif;
+        @include media(992){
+            font-size: 22px;
+        }
     }
     &__logo{
         position: absolute;
@@ -31,8 +122,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 86px;
-        img{
+        @include media(992){
+            transform: translate(0);
+            position: static;
+            width: 100px;   
+        }
+        svg{
             width: 100%;
+            height: 100%;
         }
     }
     &__right{
@@ -40,6 +137,9 @@
         align-items: center;
         justify-content: flex-end;
         gap: 32px;
+        @include media(992){
+            display: none;
+        }
     }
     &__lang{
         background: none;
@@ -60,5 +160,55 @@
         color: #fff;
         font-size: 14px;
         font-weight: 500;
+        @include media(1200){
+            height: 56px;
+            font-size: 18px;
+        }
+    }
+    &__button {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+        @include media(992) {
+          display: block;
+        }
+        &.open {
+            .header__button-line,
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(135deg);
+            }
+            &::after {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
+        &::before,
+        &::after,
+        &-line {
+            transition: 0.5s;
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #000;
+        }
+        &::before {
+            top: 20%;
+        }
+        &::after {
+            bottom: 20%;
+        }
+        &-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
