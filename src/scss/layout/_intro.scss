@@ -1,5 +1,19 @@
 .intro{
     padding-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    @include media(576){
+        padding-top: 60px;
+    }
+    &__pp{
+        display: none;
+        @include media(768){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -15,6 +29,9 @@
         border-radius: 34px;
         background: #F4F4F4;
         margin-bottom: 30px;
+        @include media(768){
+            display: none;
+        }
     }
     &__title{
         font-size: 48px;
@@ -23,8 +40,14 @@
         font-weight: 400;
         line-height: 115%;
         margin-bottom: 24px;
-        svg{
+        @include media(576){
+            font-size: 32px;
+        }
+        img{
             margin-bottom: -4px;
+            @include media(768){
+                display: none;
+            }
         }
         span{
             color: #A1A1A0;
@@ -36,12 +59,21 @@
         line-height: 27px;
         text-align: center;
         color: #3B3B3B;
+        opacity: 0.7; 
         margin-bottom: 90px;
+        @include media(768){
+            margin-bottom: 50px;
+        }
     }
     &__img{
         max-width: 1031px;
         width: 100%;
         line-height: 0;
+        @include media(768){
+            width: 510px;
+            max-width: 510px;
+            margin-left: auto;
+        }
         img{
             width: 100%;
         }
