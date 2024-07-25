@@ -1,6 +1,6 @@
 .bye{
     padding-bottom: 150px;
-    @include media(768){
+    @include media(576){
         padding-bottom: 60px;
     }
     &__title{
