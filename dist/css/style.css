@@ -2828,6 +2828,31 @@ body {
   .blog__item {
     width: 100%;
   }
+
+  .bye {
+    padding-bottom: 60px;
+  }
+
+  .bye__title {
+    margin-bottom: 40px;
+  }
+
+  .bye__content {
+    gap: 56px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .bye__col {
+    width: 100%;
+    gap: 56px;
+  }
+
+  .bye__col:last-of-type {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2982,6 +3007,10 @@ body {
 
   .trust__item {
     width: calc(50% - 15px);
+  }
+
+  .bye__item-title {
+    font-size: 26px;
   }
 }
 

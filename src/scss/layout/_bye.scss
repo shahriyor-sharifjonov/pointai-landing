@@ -1,22 +1,39 @@
 .bye{
     padding-bottom: 150px;
+    @include media(768){
+        padding-bottom: 60px;
+    }
     &__title{
         max-width: 468px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 90px;
+        @include media(768){
+            margin-bottom: 40px;
+        }
     }
     &__content{
         display: flex;
         gap: 65px;
+        @include media(768){
+            gap: 56px;
+            flex-direction: column;
+        }
     }
     &__col{
         display: flex;
         flex-direction: column;
         gap: 125px;
         width: 50%;
+        @include media(768){
+            width: 100%;
+            gap: 56px;
+        }
         &:last-of-type{
             margin-top: 60px;
+            @include media(768){
+                margin-top: 0;
+            }
         }
     }
     &__item{
@@ -37,6 +54,9 @@
             margin-bottom: 20px;
             color: #2A2924;
             margin-bottom: 20px;
+            @include media(576){
+                font-size: 26px; 
+            }
         }
         &-p{
             font-size: 16px;
