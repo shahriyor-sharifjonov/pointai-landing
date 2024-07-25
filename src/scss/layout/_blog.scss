@@ -10,9 +10,16 @@
         display: flex;
         justify-content: space-between;
         gap: 50px;
+        @include media(768){
+            flex-direction: column;
+            gap: 24px;
+        }
     }
     &__item{
         width: 33.3333%;
+        @include media(576){
+            width: 100%;
+        }
         &-img{
             width: 100%;
             border-radius: 12px;
