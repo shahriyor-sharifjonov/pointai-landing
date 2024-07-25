@@ -3063,6 +3063,19 @@ body {
     width: 100%;
     max-width: 400px;
   }
+
+  .info {
+    padding-bottom: 60px;
+  }
+
+  .info__container {
+    padding-bottom: 60px;
+  }
+
+  .info__title {
+    font-size: 29px;
+    max-width: 440px;
+  }
 }
 
 @media (max-width: 428px) {

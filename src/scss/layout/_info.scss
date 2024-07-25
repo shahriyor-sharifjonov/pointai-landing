@@ -1,5 +1,8 @@
 .info{
     padding-bottom: 150px;
+    @include media(576){
+        padding-bottom: 60px;
+    }
     &__container{
         background: #F4F4F4;
         border-radius: 20px;
@@ -8,6 +11,9 @@
         align-items: center;
         padding-top: 60px;
         padding-bottom: 90px;
+        @include media(576){
+            padding-bottom: 60px;
+        }
     }
     &__img{
         max-width: 386px;
@@ -26,6 +32,10 @@
         width: 100%;
         text-align: center;
         font-weight: 400;
+        @include media(576){
+            font-size: 29px;
+            max-width: 440px;
+        }
     }
     &__p{
         color: #2F3245;
