@@ -2787,6 +2787,22 @@ body {
   .smi__item-link {
     font-size: 12px;
   }
+
+  .support__item {
+    padding: 20px 15px;
+  }
+
+  .support__item-svg {
+    margin-bottom: 15px;
+  }
+
+  .support__item-title {
+    font-size: 18px;
+  }
+
+  .support__item-p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2890,6 +2906,19 @@ body {
 
   .smi__item {
     width: calc(50% - 15px);
+  }
+
+  .support__title {
+    margin-bottom: 15px;
+  }
+
+  .support__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .support__item {
+    width: calc(50% - 6px);
   }
 }
 
@@ -3075,6 +3104,14 @@ body {
   .info__title {
     font-size: 29px;
     max-width: 440px;
+  }
+
+  .support {
+    padding-bottom: 60px;
+  }
+
+  .support__item {
+    width: 100%;
   }
 }
 

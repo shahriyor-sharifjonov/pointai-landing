@@ -1,11 +1,17 @@
 .support{
     padding-bottom: 190px;
+    @include media(576){
+        padding-bottom: 60px;
+    } 
     &__title{
-        margin-bottom: 15px;
-    }
+        margin-bottom: 15px; 
+        @include media(768){
+            margin-bottom: 15px; 
+        }
+    }  
     &__p{
         font-size: 16px;
-        line-height: 166%;
+        line-height: 166%; 
         margin-bottom: 60px;
         color: #2F3245;
         margin-left: auto;
@@ -16,6 +22,9 @@
         display: flex;
         justify-content: center;
         gap: 12px;
+        @include media(768){
+            flex-wrap: wrap;
+        }
     }
     &__item{
         max-width: 395px;
@@ -25,19 +34,37 @@
         padding: 33px 25px 35px 25px;
         display: flex;
         flex-direction: column;
+        @include media(992){
+            padding: 20px 15px;
+        }
+        @include media(768){
+            width: calc(50% - 6px);
+        }
+        @include media(576){
+            width: 100%;
+        }
         &-svg{
             flex: 1 1 auto;
             margin-bottom: 73px;
+            @include media(992){
+                margin-bottom: 15px;
+            }
         }
         &-title{
             font-size: 20px;
             margin-bottom: 13px;
             line-height: 166%;
+            @include media(992){
+                font-size: 18px;
+            }
         }
         &-p{
             color: #2F3245;
             font-size: 16px;
             line-height: 166%;
+            @include media(992){
+                font-size: 16px;
+            }
         }
     }
 }
