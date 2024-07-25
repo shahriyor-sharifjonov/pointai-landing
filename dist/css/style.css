@@ -2604,8 +2604,22 @@ body {
     text-align: center;
   }
 
+  .days {
+    padding-bottom: 60px;
+  }
+
+  .days__title {
+    font-size: 36px;
+  }
+
   .faq {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 428px) {
+  .days__title {
+    font-size: 28px;
   }
 }
