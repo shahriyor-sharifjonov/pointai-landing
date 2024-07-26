@@ -2848,6 +2848,10 @@ body {
     gap: 20px;
   }
 
+  .team__item {
+    width: calc(33.333% - 27px);
+  }
+
   .platform__item {
     width: calc(50% - 12px);
   }
@@ -3113,6 +3117,14 @@ body {
     text-align: center;
   }
 
+  .team__content {
+    gap: 30px 15px;
+  }
+
+  .team__item {
+    width: calc(33.333% - 12px);
+  }
+
   .text__content {
     padding: 30px;
   }
@@ -3341,6 +3353,22 @@ body {
 
   .review__item-text {
     font-size: 24px;
+  }
+
+  .team {
+    padding-bottom: 60px;
+  }
+
+  .team__title {
+    font-size: 36px;
+  }
+
+  .team__p {
+    margin-bottom: 30px;
+  }
+
+  .team__item {
+    width: calc(50% - 15px);
   }
 
   .investors {
