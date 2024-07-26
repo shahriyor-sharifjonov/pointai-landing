@@ -2145,8 +2145,6 @@
 }
 
 .tarif__item-bot {
-  position: absolute;
-  bottom: -40px;
   right: 0;
   background: #fff;
   display: -webkit-box;
