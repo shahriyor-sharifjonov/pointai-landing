@@ -1,6 +1,12 @@
 .about{
     padding-top: 70px;
     padding-bottom: 150px;
+    @include media(768){
+        padding-bottom: 90px;
+    }
+    @include media(576){
+        padding-bottom: 60px;
+    }
     &__content{
         position: relative;
         border-radius: 25px;
@@ -8,6 +14,16 @@
         border: 2px solid #F3F3F3;
         padding: 100px 80px 50px 80px;
         isolation: isolate;
+        @include media(768){
+            padding: 30px;
+            width: calc(100% + 50px);
+            margin-left: -25px;
+        }
+        @include media(576){
+            width: 100%;
+            margin-left: 0;
+            padding: 30px 15px;
+        }
     }
     &__bg{
         position: absolute;
@@ -29,6 +45,9 @@
         margin-bottom: 150px;
         color: #fff;
         line-height: 115%;
+        @include media(768){
+            font-size: 36px;
+        }
     }
     &__p{
         font-size: 16px;

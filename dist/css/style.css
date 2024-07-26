@@ -3117,6 +3117,20 @@ body {
     text-align: center;
   }
 
+  .about {
+    padding-bottom: 90px;
+  }
+
+  .about__content {
+    padding: 30px;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+  }
+
+  .about__title {
+    font-size: 36px;
+  }
+
   .team__content {
     gap: 30px 15px;
   }
@@ -3353,6 +3367,16 @@ body {
 
   .review__item-text {
     font-size: 24px;
+  }
+
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about__content {
+    width: 100%;
+    margin-left: 0;
+    padding: 30px 15px;
   }
 
   .team {
