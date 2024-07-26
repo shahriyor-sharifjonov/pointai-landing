@@ -19,6 +19,10 @@ html,
 body{
     height: 100%;
 }
+section{
+    max-width: 100%;
+    overflow: hidden;
+}
 .wrapper{
     min-height: 100%;
     display: flex;
