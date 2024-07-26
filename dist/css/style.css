@@ -779,6 +779,13 @@
   font-size: 14px;
   text-decoration: none;
   border: none;
+  -webkit-transition: background 100ms ease-out;
+  -o-transition: background 100ms ease-out;
+  transition: background 100ms ease-out;
+}
+
+.days__btn:hover {
+  background: #FF7C53;
 }
 
 .faq {
@@ -1184,6 +1191,13 @@
   font-size: 14px;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
+  -webkit-transition: background 100ms ease-out;
+  -o-transition: background 100ms ease-out;
+  transition: background 100ms ease-out;
+}
+
+.info__btn:hover {
+  background: #FF7C53;
 }
 
 .support {
@@ -1718,6 +1732,13 @@
   color: #fff;
   background: #FF5C29;
   border-radius: 34px;
+  -webkit-transition: background 100ms ease-out;
+  -o-transition: background 100ms ease-out;
+  transition: background 100ms ease-out;
+}
+
+.func__btn:hover {
+  background: #FF7C53;
 }
 
 .func__marque {
@@ -2081,6 +2102,13 @@
           justify-content: center;
   padding: 22px 30px;
   color: #fff;
+  -webkit-transition: background 100ms ease-out;
+  -o-transition: background 100ms ease-out;
+  transition: background 100ms ease-out;
+}
+
+.tarif__info-btn:hover {
+  background: #FF7C53;
 }
 
 .tarif__content {
@@ -2619,6 +2647,10 @@
 html,
 body {
   height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 section {

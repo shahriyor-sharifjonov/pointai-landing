@@ -36,5 +36,9 @@
         font-size: 14px;
         text-decoration: none;
         border: none;
+        transition: background 100ms ease-out;
+        &:hover{
+            background: #FF7C53;
+        }
     }
 }

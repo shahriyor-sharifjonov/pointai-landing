@@ -55,5 +55,9 @@
         font-size: 14px;
         font-weight: 600;
         font-family: "Manrope", sans-serif;
+        transition: background 100ms ease-out;
+        &:hover{
+            background: #FF7C53;
+        }
     }
 }

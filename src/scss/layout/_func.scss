@@ -76,6 +76,10 @@
         color: #fff;
         background: #FF5C29;
         border-radius: 34px;
+        transition: background 100ms ease-out;
+        &:hover{
+            background: #FF7C53;
+        }
     }
     &__marque {
         width: 100%; 
