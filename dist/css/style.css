@@ -1581,6 +1581,15 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 30px;
+}
+
+.investors__item {
+  width: calc(33.3333% - 15px);
+}
+
+.investors__item img {
+  max-width: 100%;
 }
 
 .text {
@@ -3332,6 +3341,27 @@ body {
 
   .review__item-text {
     font-size: 24px;
+  }
+
+  .investors {
+    padding-bottom: 60px;
+  }
+
+  .investors__title {
+    font-size: 36px;
+  }
+
+  .investors__p {
+    margin-bottom: 30px;
+  }
+
+  .investors__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .investors__item {
+    width: calc(50% - 15px);
   }
 
   .text {
