@@ -231,6 +231,13 @@
   font-weight: 500;
   line-height: 120%;
   font-family: "Manrope", sans-serif;
+  -webkit-transition: color 100ms ease-out;
+  -o-transition: color 100ms ease-out;
+  transition: color 100ms ease-out;
+}
+
+.header__link:hover {
+  color: #FF5C29;
 }
 
 .header__logo {
@@ -287,6 +294,13 @@
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+  -webkit-transition: background 100ms ease-out;
+  -o-transition: background 100ms ease-out;
+  transition: background 100ms ease-out;
+}
+
+.header__btn:hover {
+  background: #FF7C53;
 }
 
 .header__button {

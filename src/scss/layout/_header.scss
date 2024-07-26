@@ -112,6 +112,10 @@
         font-weight: 500;
         line-height: 120%;
         font-family: "Manrope", sans-serif;
+        transition: color 100ms ease-out;
+        &:hover{
+            color: #FF5C29;
+        }
         @include media(992){
             font-size: 22px;
         }
@@ -160,6 +164,10 @@
         color: #fff;
         font-size: 14px;
         font-weight: 500;
+        transition: background 100ms ease-out;
+        &:hover{
+            background: #FF7C53;
+        }
         @include media(1200){
             height: 56px;
             font-size: 18px;
