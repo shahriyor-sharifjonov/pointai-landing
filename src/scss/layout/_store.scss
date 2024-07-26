@@ -1,5 +1,8 @@
 .store{
     padding-bottom: 90px;
+    @include media(576){
+        padding-bottom: 0;
+    }
     &__p{
         margin-bottom: 50px;
         max-width: 401px;
@@ -29,6 +32,11 @@
             font-size: 20px;
             line-height: 26px;
             gap: 14px;
+            @include media(410){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
             span{
                 background: #fff;
                 border-radius: 5px;
