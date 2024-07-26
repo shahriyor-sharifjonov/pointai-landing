@@ -3,6 +3,10 @@
     width: 100%;
     overflow: hidden;
     padding-bottom: 110px;
+    @include media(576){
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -30,6 +34,12 @@
         font-size: 48px;
         line-height: 140%;
         margin-bottom: 24px;
+        @include media(768){
+            font-size: 42px;
+        }
+        @include media(576){
+            font-size: 32px;
+        }
         span{
             position: relative;
             padding: 0 0px 8px 12px;
