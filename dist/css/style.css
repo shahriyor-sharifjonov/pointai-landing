@@ -3104,6 +3104,10 @@ body {
     text-align: center;
   }
 
+  .text__content {
+    padding: 30px;
+  }
+
   .func__title {
     font-size: 42px;
   }
@@ -3328,6 +3332,14 @@ body {
 
   .review__item-text {
     font-size: 24px;
+  }
+
+  .text {
+    padding-bottom: 60px;
+  }
+
+  .text__content {
+    padding: 30px 15px;
   }
 
   .func {

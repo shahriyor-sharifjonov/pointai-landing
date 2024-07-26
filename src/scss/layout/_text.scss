@@ -1,5 +1,8 @@
 .text{
     padding-bottom: 90px;
+    @include media(576){
+        padding-bottom: 60px;
+    }
     &__content{
         max-width: 693px;
         margin-left: auto;
@@ -8,6 +11,12 @@
         border-radius: 14px;
         padding: 60px 120px 80px 120px;
         border-radius: 14px;
+        @include media(768){
+            padding: 30px;
+        }
+        @include media(576){
+            padding: 30px 15px;
+        }
     }
     &__title{
         font-size: 32px;
