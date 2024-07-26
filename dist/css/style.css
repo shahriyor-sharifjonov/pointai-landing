@@ -3239,6 +3239,10 @@ body {
     font-size: 32px;
   }
 
+  .platform__title {
+    font-size: 36px;
+  }
+
   .platform__item {
     width: 100%;
   }

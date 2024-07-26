@@ -9,6 +9,9 @@
         max-width: 753px; 
         width: 100%;
         text-align: center;
+        @include media(576){
+            font-size: 36px;
+        }
     }
     &__p{
         text-align: center;
