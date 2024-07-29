@@ -1,13 +1,15 @@
 import * as functions from "./modules/functions.js";
+import $ from 'jquery'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 
 functions.isWebp();
+gsap.registerPlugin(ScrollTrigger);
 
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
 // const swiper = new Swiper();
 
-import $ from 'jquery'
-import gsap from 'gsap'
 
 $(document).ready(function() {
     $(".accordion > .accordion__button").on("click", function() {
@@ -69,3 +71,103 @@ window.onclick = (e) => {
 //         sticky.style.bottom = 'auto';
 //     }
 // });
+
+gsap.utils.toArray(".form").forEach(el => {
+  const tl = gsap.timeline({
+      scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "center center",
+          markers: false,
+          scrub: false,
+      }
+  })
+  tl.add('start')
+      .fromTo(".form__content", {
+        y: 100,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1
+      }, 'start')
+})
+
+gsap.utils.toArray(".smi").forEach(el => {
+  const tl = gsap.timeline({
+      scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "center center",
+          markers: false,
+          scrub: false,
+      }
+  })
+  tl.add('start')
+      .fromTo(".smi__container", {
+        y: 100,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1
+      }, 'start')
+})
+
+gsap.utils.toArray(".support").forEach(el => {
+  const tl = gsap.timeline({
+      scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "center center",
+          markers: false,
+          scrub: false,
+      }
+  })
+  tl.add('start')
+      .fromTo(".support__container", {
+        y: 100,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1
+      }, 'start')
+})
+
+gsap.utils.toArray(".review").forEach(el => {
+  const tl = gsap.timeline({
+      scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "center center",
+          markers: false,
+          scrub: false,
+      }
+  })
+  tl.add('start')
+      .fromTo(".review__container", {
+        y: 100,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1
+      }, 'start')
+})
+
+gsap.utils.toArray(".blog").forEach(el => {
+  const tl = gsap.timeline({
+      scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "center center",
+          markers: false,
+          scrub: false,
+      }
+  })
+  tl.add('start')
+      .fromTo(".blog__container", {
+        y: 100,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1
+      }, 'start')
+})
